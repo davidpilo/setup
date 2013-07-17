@@ -1,6 +1,7 @@
 sudo apt-get update
 sudo apt-get install -y vim
 sudo apt-get install -y git-core
+sudo apt-get install screen
 cd; mkdir .vim
 mkdir -p ~/.vim/autoload ~/.vim/bundle
 curl -Sso ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
