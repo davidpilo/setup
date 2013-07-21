@@ -11,7 +11,7 @@ cd ~/.vim
 git clone https://github.com/tomasr/molokai.git 
 mkdir colors
 cp molokai/colors/molokai.vim colors/
-rm -r molokai/
+rm -rf molokai/
 cd ~/.vim/bundle
 git clone git://github.com/jpalardy/vim-slime.git
 cd ~
