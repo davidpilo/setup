@@ -42,3 +42,8 @@ ln -sb dotfiles/.screenrc .
 ln -sb dotfiles/.bash_profile .
 ln -sb dotfiles/.bashrc .
 ln -sb dotfiles/.vimrc
+ln -sb dotfiles/.bashrc_custom .
+
+#configure git
+git config --global user.name "David Pilo"
+git config --global user.name davidpilo@gmail.com
