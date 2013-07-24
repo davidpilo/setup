@@ -3,15 +3,17 @@ sudo apt-get install -y vim
 sudo apt-get install -y git-core
 sudo apt-get install screen
 
-#install pathogen.vim
+# Install pathogen.vim
 cd $HOME
 mkdir .vim
 mkdir -p ~/.vim/autoload ~/.vim/bundle
 curl -Sso ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 
-#nerdtree
+# Install vim plugins
 cd ~/.vim/bundle
 git clone https://github.com/scrooloose/nerdtree.git
+cd ~/.vim/bundle
+git clone git://github.com/tpope/vim-fugitive.git
 
 #cd ~/.vim
 #git clone https://github.com/tomasr/molokai.git 
