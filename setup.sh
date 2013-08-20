@@ -9,11 +9,23 @@ mkdir .vim
 mkdir -p ~/.vim/autoload ~/.vim/bundle
 curl -Sso ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 
-# Install vim plugins
+# Install vim nerdtree
 cd ~/.vim/bundle
 git clone https://github.com/scrooloose/nerdtree.git
+
+# Install fugitive plugin 
 cd ~/.vim/bundle
 git clone git://github.com/tpope/vim-fugitive.git
+
+# Install autocompletepop vim plugins
+cd $HOME
+wget https://bitbucket.org/ns9tks/vim-autocomplpop/get/tip.zip
+unzip tip.zip -d tip
+cd tip
+cd *auto*
+cp -R * ~/.vim/
+cd $HOME
+rm -R tip/
 
 #cd ~/.vim
 #git clone https://github.com/tomasr/molokai.git 
@@ -25,16 +37,19 @@ git clone git://github.com/tpope/vim-fugitive.git
 cd ~/.vim/bundle
 git clone git://github.com/jpalardy/vim-slime.git
 
-#cd ~
-#mkdir snipmatetemp
-#cd snipmatetemp
-#git clone git://github.com/msanders/snipmate.vim.git
-#cd snipmate.vim
-#cp -R * ~/.vim
-#cd ~
-#rm -rf snipmatetemp
+# Install vim snipmate plugin
+cd ~
+mkdir snipmatetemp
+cd snipmatetemp
+git clone git://github.com/msanders/snipmate.vim.git
+cd snipmate.vim
+cp -R * ~/.vim
+cd ~
+rm -rf snipmatetemp
 
-# git pull and install dotfiles as well
+##############################
+# DOTFILES 
+##############################
 cd $HOME
 if [ -d ./dotfiles/ ]; then
   mv dotfiles dotfiles.old
@@ -46,6 +61,3 @@ ln -sb dotfiles/.bashrc .
 ln -sb dotfiles/.vimrc
 ln -sb dotfiles/.bashrc_custom .
 
-#configure git
-git config --global user.name "David Pilo"
-git config --global user.name davidpilo@gmail.com
