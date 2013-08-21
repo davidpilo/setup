@@ -17,7 +17,7 @@ git clone https://github.com/scrooloose/nerdtree.git
 cd ~/.vim/bundle
 git clone git://github.com/tpope/vim-fugitive.git
 
-# Install autocompletepop vim plugins
+# Install autocompletepop and L9 vim plugins
 cd $HOME
 wget https://bitbucket.org/ns9tks/vim-autocomplpop/get/tip.zip
 unzip tip.zip -d tip
@@ -26,6 +26,16 @@ cd *auto*
 cp -R * ~/.vim/
 cd $HOME
 rm -R tip/
+rm tip.zip
+cd $HOME
+wget https://bitbucket.org/ns9tks/vim-l9/get/tip.zip
+unzip tip.zip -d tip
+cd tip
+cd *l9*
+cp -R * ~/.vim/
+cd $HOME
+rm -R tip/
+rm tip.zip
 
 #cd ~/.vim
 #git clone https://github.com/tomasr/molokai.git 
