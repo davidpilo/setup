@@ -13,6 +13,10 @@ curl -Sso ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen
 cd ~/.vim/bundle
 git clone https://github.com/scrooloose/nerdtree.git
 
+# Install vim multiple curlsors plugin
+cd ~/.vim/bundle
+git clone https://github.com/terryma/vim-multiple-cursors.git
+
 # Install fugitive plugin 
 cd ~/.vim/bundle
 git clone git://github.com/tpope/vim-fugitive.git
