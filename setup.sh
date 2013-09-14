@@ -55,15 +55,10 @@ rm tip.zip
 cd ~/.vim/bundle
 git clone git://github.com/jpalardy/vim-slime.git
 
-# Install vim snipmate plugin
-cd ~
-mkdir snipmatetemp
-cd snipmatetemp
-git clone git://github.com/msanders/snipmate.vim.git
-cd snipmate.vim
-cp -R * ~/.vim
-cd ~
-rm -rf snipmatetemp
+# Install vim ultisnips plugin
+cd ~/.vim/bundle/
+git clone https://github.com/SirVer/ultisnips.git
+echo "extends html" >> ~/.vim/bundle/ultisnips/UltiSnips/php.snippets #add html snippets to php files
 
 ##############################
 # DOTFILES 
