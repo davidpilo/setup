@@ -17,6 +17,14 @@ git clone git://github.com/tpope/vim-surround.git
 cd ~/.vim/bundle
 git clone https://github.com/scrooloose/nerdtree.git
 
+# Install matchit plugin
+cd ~/.vim/bundle
+mkdir matchit
+cd matchit
+wget http://www.vim.org/scripts/download_script.php?src_id=8196 -O matchitzip
+unzip matchitzip
+rm matchitzip
+
 # Install vim multiple curlsors plugin
 cd ~/.vim/bundle
 git clone https://github.com/terryma/vim-multiple-cursors.git
