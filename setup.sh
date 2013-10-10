@@ -1,7 +1,9 @@
 sudo apt-get update
 sudo apt-get install -y vim
 sudo apt-get install -y git-core
-sudo apt-get install screen
+sudo apt-get install -y screen
+sudo apt-get install -y curl
+sudo apt-get install -y unzip
 
 # Install pathogen.vim
 cd $HOME
@@ -53,11 +55,12 @@ cd $HOME
 rm -R tip/
 rm tip.zip
 
-#cd ~/.vim
-#git clone https://github.com/tomasr/molokai.git 
-#mkdir colors
-#cp molokai/colors/molokai.vim colors/
-#rm -rf molokai/
+#install molokai color scheme for vim
+cd ~/.vim
+git clone https://github.com/tomasr/molokai.git 
+mkdir colors
+cp molokai/colors/molokai.vim colors/
+rm -rf molokai/
 
 #slime for copy paste to another screen 
 cd ~/.vim/bundle
