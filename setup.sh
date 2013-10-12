@@ -66,6 +66,7 @@ git clone git://github.com/jpalardy/vim-slime.git
 # Install vim ultisnips plugin
 cd ~/.vim/bundle/
 git clone https://github.com/SirVer/ultisnips.git
+echo -e "snippet php \"php\"\n  <?php \${1} ?>\nendsnippet\n" >> ~/.vim/bundle/ultisnips/UltiSnips/php.snippets # Add missing basic insert php snippet
 echo "extends html" >> ~/.vim/bundle/ultisnips/UltiSnips/php.snippets #add html snippets to php files
 
 ##############################
