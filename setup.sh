@@ -5,6 +5,9 @@ sudo apt-get install -y screen
 sudo apt-get install -y curl
 sudo apt-get install -y unzip
 
+# Some git configuration:
+git config --global color.ui true
+
 # Install pathogen.vim
 cd $HOME
 mkdir .vim
