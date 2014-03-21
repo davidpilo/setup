@@ -60,12 +60,9 @@ cd $HOME
 rm -R tip/
 rm tip.zip
 
-# Install molokai color scheme for vim
-# cd ~/.vim
-# git clone https://github.com/tomasr/molokai.git 
-# mkdir colors
-# cp molokai/colors/molokai.vim colors/
-# rm -rf molokai/
+# Install solarized color scheme for vim
+cd ~/.vim/bundle
+git clone git://github.com/altercation/vim-colors-solarized.git
 
 #slime for copy paste to another screen 
 cd ~/.vim/bundle
