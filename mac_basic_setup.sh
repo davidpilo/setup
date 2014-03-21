@@ -5,7 +5,7 @@ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | 
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 
 # Bew installs:
-brew edit wget
+brew install wget
 
 # Some git configuration:
 git config --global color.ui true
@@ -85,9 +85,9 @@ if [ -d ./dotfiles/ ]; then
   mv dotfiles dotfiles.old
 fi
 git clone https://github.com/davidpilo/dotfiles.git
-ln -sb dotfiles/.screenrc .
-ln -sb dotfiles/.bash_profile .
-ln -sb dotfiles/.bashrc .
-ln -sb dotfiles/.vimrc
-ln -sb dotfiles/.bashrc_custom .
+ln -s dotfiles/.screenrc .
+ln -s dotfiles/.bash_profile .
+ln -s dotfiles/.bashrc .
+ln -s dotfiles/.vimrc
+ln -s dotfiles/.bashrc_custom .
 
