@@ -11,6 +11,10 @@ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | 
 
 # Some git configuration:
 git config --global color.ui true
+git config --global alias.ci commit
+git config --global alias.st status
+git config --global user.name "David Pilo"
+git config --global user.email davidpilo@gmail.com
 
 # Install pathogen.vim
 cd $HOME
