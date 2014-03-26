@@ -6,6 +6,7 @@ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 
 # Bew installs:
 brew install wget
+brew install ctags-exuberant
 
 # Some git configuration:
 git config --global color.ui true
@@ -20,6 +21,10 @@ cd $HOME
 mkdir .vim
 mkdir -p ~/.vim/autoload ~/.vim/bundle
 curl -Sso ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+
+# Install tagbar
+cd ~/.vim/bundle
+git clone git://github.com/majutsushi/tagbar
 
 # Install vim plugin
 cd ~/.vim/bundle

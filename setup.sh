@@ -5,6 +5,8 @@ sudo apt-get install -y git-core
 sudo apt-get install -y screen
 sudo apt-get install -y curl
 sudo apt-get install -y unzip
+sudo apt-get install -y exuberant-ctags
+
 
 # Install zsh
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
@@ -21,6 +23,11 @@ cd $HOME
 mkdir .vim
 mkdir -p ~/.vim/autoload ~/.vim/bundle
 curl -Sso ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+
+# Install tagbar
+cd ~/.vim/bundle
+git clone git://github.com/majutsushi/tagbar
+
 
 # Install surround vim plugin
 cd ~/.vim/bundle
