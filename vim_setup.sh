@@ -8,6 +8,10 @@ curl -Sso ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen
 cd ~/.vim/bundle
 git clone git://github.com/majutsushi/tagbar
 
+# Install CtrlP
+cd ~/.vim/bundle
+git clone https://github.com/kien/ctrlp.vim.git
+
 # Install vim plugin
 cd ~/.vim/bundle
 git clone git://github.com/tpope/vim-surround.git
