@@ -19,7 +19,8 @@ git config --global user.name "David Pilo"
 git config --global user.email davidpilo@gmail.com
 
 # Install all vim plugins:
-./vim_setup.sh | sh
+sudo chmod +x ./vim_setup.sh
+./vim_setup.sh
 
 
 ##############################
